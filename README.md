@@ -13,7 +13,7 @@ Then you can install this package either with `npm` or with `bower`.
 ### npm
 
 ```shell
-npm install angulartics-google-analytics
+npm install angulartics-localforage
 ```
 
 Then add `angulartics.google.analytics` as a dependency for your app:

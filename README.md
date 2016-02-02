@@ -1,4 +1,4 @@
-## angulartics-google-analytics
+## angulartics-localforage
 
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![Bower version][bower-image]][bower-url] [![Dependencies status][dep-status-image]][dep-status-url] [![MIT license][license-image]][license-url] [![Join the Slack chat][slack-image]][slack-url]
 
@@ -23,7 +23,7 @@ require('angulartics')
 
 angular.module('myApp', [
   'angulartics', 
-  require('angulartics-google-analytics')
+  require('angulartics-localforage')
 ]);
 ```
 
@@ -32,13 +32,13 @@ angular.module('myApp', [
 ### bower
 
 ```shell
-bower install angulartics-google-analytics
+bower install angulartics-localforage
 ```
 
 Add the `<script>` to your `index.html`:
 
 ```html
-<script src="/bower_components/angulartics-google-analytics/dist/angulartics-google-analytics.min.js"></script>
+<script src="/bower_components/angulartics-google-analytics/dist/angulartics-localforage.min.js"></script>
 ```
 
 Then add `angulartics.google.analytics` as a dependency for your app:
@@ -46,32 +46,15 @@ Then add `angulartics.google.analytics` as a dependency for your app:
 ```javascript
 angular.module('myApp', [
   'angulartics', 
-  'angulartics.google.analytics'
+  'angulartics.localforage'
 ]);
 ```
-
-## Changes in the Google Analytics snippet
-
-The snippet code provided by Google Analytics does an automatic pageview hit, but this is already done by Angulartics (unless you disable it) so make sure to delete the tracking line:
-
-```js
-      ...
-      ga('create', 'UA-XXXXXXXX-X', 'none'); // 'none' while you are working on localhost
-      ga('send', 'pageview');  // DELETE THIS LINE!
-    </script>
-```
-
-Done. Open your app, browse across the different routes and check [the realtime GA dashboard](https://www.google.com/analytics/web/?hl=en#realtime/rt-overview) to see the hits.
 
 ## Documentation
 
 Documentation is available on the [Angulartics site](http://luisfarzati.github.io/angulartics).
 
 ### Settings
-Module settings are done via the `$analyticsProvider.settings.ga` property.  The following are GA-specific properties:
-* `transport`
-  _(Default: `undefined`)_ -
-  sets the `transport` property for the `ga` function call.  See the [GA Transport Documentation](https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#transport) for more information how to properly set this value.  This should be a string.
 
 ## Development
 

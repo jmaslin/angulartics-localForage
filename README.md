@@ -2,7 +2,8 @@
 
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads-image]][npm-downloads-url] [![Bower version][bower-image]][bower-url] [![Dependencies status][dep-status-image]][dep-status-url] [![MIT license][license-image]][license-url] [![Join the Slack chat][slack-image]][slack-url]
 
-Google Analytics plugin for [Angulartics](https://github.com/angulartics/angulartics).
+Localforage plugin for [Angulartics](https://github.com/angulartics/angulartics).
+
 
 ## Install
 
@@ -16,7 +17,7 @@ Then you can install this package either with `npm` or with `bower`.
 npm install angulartics-localforage
 ```
 
-Then add `angulartics.google.analytics` as a dependency for your app:
+Then add `angulartics.localforage` as a dependency for your app:
 
 ```javascript
 require('angulartics')
@@ -38,10 +39,10 @@ bower install angulartics-localforage
 Add the `<script>` to your `index.html`:
 
 ```html
-<script src="/bower_components/angulartics-google-analytics/dist/angulartics-localforage.min.js"></script>
+<script src="/bower_components/angulartics-localforage/dist/angulartics-localforage.min.js"></script>
 ```
 
-Then add `angulartics.google.analytics` as a dependency for your app:
+Then add `angulartics.localforage` as a dependency for your app:
 
 ```javascript
 angular.module('myApp', [
@@ -66,14 +67,14 @@ npm run build
 
 [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/angulartics-google-analytics.svg
-[npm-url]: https://npmjs.org/package/angulartics-google-analytics
-[npm-downloads-image]: https://img.shields.io/npm/dm/angulartics-google-analytics.svg
-[npm-downloads-url]: https://npmjs.org/package/angulartics-google-analytics
-[bower-image]: https://img.shields.io/bower/v/angulartics-google-analytics.svg
-[bower-url]: http://bower.io/search/?q=angulartics-google-analytics
-[dep-status-image]: https://img.shields.io/david/angulartics/angulartics-google-analytics.svg
-[dep-status-url]: https://david-dm.org/angulartics/angulartics-google-analytics
+[npm-image]: https://img.shields.io/npm/v/angulartics-localforage.svg
+[npm-url]: https://npmjs.org/package/angulartics-localforage
+[npm-downloads-image]: https://img.shields.io/npm/dm/angulartics-localforage.svg
+[npm-downloads-url]: https://npmjs.org/package/angulartics-localforage
+[bower-image]: https://img.shields.io/bower/v/angulartics-localforage.svg
+[bower-url]: http://bower.io/search/?q=angulartics-localforage
+[dep-status-image]: https://img.shields.io/david/angulartics/angulartics-localforage.svg
+[dep-status-url]: https://david-dm.org/angulartics/angulartics-localforage
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: LICENSE
 [slack-image]: https://angulartics.herokuapp.com/badge.svg

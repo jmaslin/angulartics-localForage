@@ -1,8 +1,9 @@
 {
-  "name": "angulartics-google-analytics",
-  "main": "lib/angulartics-google-analytics.js",
+  "name": "angulartics-localforage",
+  "main": "lib/angulartics-localforage.js",
   "dependencies": {
-    "angulartics": "~1.0.0"
+    "angulartics": "~1.0.0",
+    "angular-localforage": "~1.2.5"
   },
   "ignore": [
     "**/.*",
